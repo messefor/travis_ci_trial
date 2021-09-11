@@ -1,7 +1,8 @@
-import unittest
+
+def add(x, y):
+  return x + y
 
 
-class TestExample(unittest.TestCase):
-
-  def test_check(self) -> None:
-    self.assertEqual(1, 1)
+def test_add():
+  res = add(3, 4)
+  assert res == 7
